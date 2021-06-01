@@ -6,9 +6,8 @@ const env = process.env
 const connection = mysql.createConnection({
     host: "localhost",
     user: env.user ||'nodeuser',
-    password: env.password || 'nodeuser@1234',
-    port: 3307,
-    database: 'userInfomation'
+    password: env.password || 'nodeuserpassword',
+    port: 3306
 })
 
 connection.connect((err)=>{
