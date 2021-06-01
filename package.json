@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_mysql_crud_app",
+  "version": "1.0.0",
+  "description": "nodejs crud app with mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alahirajeffrey/nodejs_mysql_crud_app.git"
+  },
+  "author": "alahira jeffrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alahirajeffrey/nodejs_mysql_crud_app/issues"
+  },
+  "homepage": "https://github.com/alahirajeffrey/nodejs_mysql_crud_app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}
