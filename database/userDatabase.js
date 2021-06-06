@@ -1,4 +1,3 @@
-
 const mysql = require('mysql')
 
 const env = process.env
@@ -14,15 +13,15 @@ const connection = mysql.createConnection({
 //connect to database
 connection.connect((err)=>{
     if (err) throw err
-    console.log('Connected')
+    console.log('Connected to sql service...')
 
     //create database
     connection.query("CREATE DATABASE IF NOT EXISTS userInformation", (err, result)=>{
         if (err) throw err
-        console.log("Database created")
+        console.log("Database created...")
 
         //create table
-        const table = `CREATE TABLE userInformation.user (
+        const table = `CREATE TABLE IF NOT EXISTS userInformation.user (
             name VARCHAR (255),
             nationality VARCHAR (255),
             email VARCHAR (255), 
@@ -30,7 +29,7 @@ connection.connect((err)=>{
         )`
         connection.query(table, (err, result)=>{
             if (err) throw err
-            console.log('table created')
+            console.log('table created...')
         })
     })
 })
